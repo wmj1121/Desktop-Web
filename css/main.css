@@ -129,7 +129,7 @@ h1 {
 
 /* 서브메뉴 */
 .sub-bg {
-    width: 430px;
+    width: 100%;
     height: 250px;
     background: #fff;
     opacity: 50%;
@@ -137,7 +137,7 @@ h1 {
 
     position: absolute;
     top: 60px;
-    left: 160px;
+    left: 0;
     z-index: 3;
 }
 
@@ -146,7 +146,6 @@ h1 {
     font-size: 12px;
     position: absolute;
     z-index: 4;
-    color: #c4c4c4;
 }
 
 
@@ -165,7 +164,7 @@ h1 {
 .main-slider-wrap {
     position: relative;
     width: 1440px;
-    height: 540px;
+    height: 560px;
     margin: 0 auto;
 }
 .main-slider {
@@ -173,11 +172,13 @@ h1 {
     height: 500px;
     margin: 0 auto;
     position: relative;
+    top:20px;
     z-index: 1;
 }
 
 /* 메인 슬라이더 동그라미 버튼 */
 .m-pager {
+    position: absolute;
     bottom:0;
 }
 
@@ -532,18 +533,20 @@ h3 {
     top:130px
   }
 
-.btn-area-2,
-.btn-area-3 {
-    margin-top: 10px;
+.btn-sns {
+    display: flex;
 }
 
 .btn-area-2 button {
-    font-size:16px;
+    width:197.5px;
+    font-size:14px;
     background-color: #FCE324;
+    margin-right: 5px;
 }
 
 .btn-area-3 button {
-    font-size:16px;
+    width: 197.5px;
+    font-size:14px;
     background-color: #43B86F;
 }
 
@@ -796,3 +799,134 @@ h3 {
    margin-top: 20px;
  }
 
+
+
+
+/* 리스트 스타일 시작 */
+
+.list-mainthum img {
+    display: block;
+    width: 100%;
+}
+
+.list-tilte h2 {
+    font-size: 28px;
+    color:#797373;
+    padding:40px 0 10px 0;
+}
+.list-tilte ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+
+.list-tilte ul li {
+    float: left;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #797373;
+}
+
+.list-tilte ul li a:hover {
+    color: #797373;
+}
+
+
+.list-sub-title-01 {
+    width: 100%;
+    height: 70px;
+    background-color: #F4F1E8;
+    
+}
+
+.list-sub-01 h4 {
+    font-family: 'Scheherazade', serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 17px 0 0 0;
+    color: #797373;
+}
+
+.list-sub-02 {
+    margin-top: 120px;
+
+}
+
+.list-inner-01 {
+    margin-top: 50px;
+}
+
+.list-inner-01 ul  {
+    display: flex;
+}
+
+.list-inner-01 ul li {
+    position: relative;
+}
+
+.list-inner-01 ul .list-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.list-inner-01 ul .list-mainthum:hover .list-hover {
+    opacity: 1;
+
+}
+
+
+.list-inner-01 ul li img{
+    display: block;
+    width: 100%;
+    padding-bottom: 28px;
+}
+
+.water {
+    width:255px;
+    margin: 0 auto;
+}
+
+.water-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.water p,
+h5 {
+    font-size: 13px;
+}
+
+.water h5 {
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+.water span {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0 15px 0;
+}
+
+.list-btn-add h4 {
+    font-size: 13px;
+    font-family: 'Gothic A1', sans-serif;
+    width:200px;
+    height: 50px;
+    border: 1px solid #979393;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.list-btn-add {
+    padding-top: 100px;
+}
+
+hr {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
